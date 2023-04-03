@@ -12,7 +12,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      // editor: './src/js/editor.js'
+      editor: './src/js/editor.js'
     },
 
     output: {
@@ -26,8 +26,8 @@ module.exports = () => {
         title: 'Text Editor'
       }),
       new InjectManifest({
-        srcSw: './src-sw.js',
-        destSW: 'src-sw.js',
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
         fingerprints: false,
@@ -38,11 +38,13 @@ module.exports = () => {
         background_color: '#ffffff',
         crossorigin: 'use-credentials',
         publicPath: './',
+        startURL: './',
         icons: [
           {
-            src: path.resolve('/src/images/logo.png'),
+            // src: path.resolve('src/images/logo.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('src', 'icons'),
+            destination: path.join('assets', 'icons'),
           }
         ] 
       })
