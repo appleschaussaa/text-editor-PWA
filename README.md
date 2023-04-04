@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 ​
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- GitHub Repo: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Deployed Heroku App](https://enigmatic-peak-99460.herokuapp.com/)
+- Project Repo: [github.com/appleschaussaa/text-editor-PWA](https://github.com/appleschaussaa/text-editor-PWA)
 ​
 ## My process
 ​
