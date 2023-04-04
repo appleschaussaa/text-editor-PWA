@@ -12,7 +12,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      editor: './src/js/editor.js'
+      // editor: './src/js/editor.js',
     },
 
     output: {
@@ -32,13 +32,13 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'Editor',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
         description: 'Lets edit some text!!!',
         background_color: '#ffffff',
         crossorigin: 'use-credentials',
-        publicPath: './',
         startURL: './',
+        publicPath: './',
         icons: [
           {
             // src: path.resolve('src/images/logo.png'),
